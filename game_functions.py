@@ -7,6 +7,19 @@ def pick_value(poss_values):
 
 # function to be used in game_2: Higher or Lower
 def check_higher_lower(current_val, next_val, user_input):
+    if current_val > next_val:
+        if user_input == 'h':
+            result = False
+        else:
+            result = True
+    if current_val < next_val:
+        if user_input == 'h':
+            result = True
+        else: 
+            result = False
+
+    return result
+        
     pass
 
 # function to be used in game_3: Hangman
